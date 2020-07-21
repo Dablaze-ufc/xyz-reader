@@ -51,13 +51,13 @@ public class ArticleDetailActivity extends AppCompatActivity
         setContentView(R.layout.activity_article_detail);
 
         // Set up toolbar
-        Toolbar articleDetailToolbar = findViewById(R.id.article_detail_toolbar);
-        articleDetailToolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ArticleDetailActivity.super.onBackPressed();
-            }
-        });
+//        Toolbar articleDetailToolbar = findViewById(R.id.article_detail_toolbar);
+//        articleDetailToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ArticleDetailActivity.super.onBackPressed();
+//            }
+//        });
 
         getSupportLoaderManager().initLoader(0, null, this);
 
