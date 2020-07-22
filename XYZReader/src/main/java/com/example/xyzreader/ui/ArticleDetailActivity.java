@@ -5,6 +5,9 @@ import android.database.Cursor;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.TypedValue;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,9 +17,6 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
 import androidx.viewpager.widget.ViewPager;
-import android.util.TypedValue;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
@@ -51,13 +51,13 @@ public class ArticleDetailActivity extends AppCompatActivity
         setContentView(R.layout.activity_article_detail);
 
         // Set up toolbar
-//        Toolbar articleDetailToolbar = findViewById(R.id.article_detail_toolbar);
-//        articleDetailToolbar.setNavigationOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                ArticleDetailActivity.super.onBackPressed();
-//            }
-//        });
+        Toolbar articleDetailToolbar = findViewById(R.id.article_detail_toolbar);
+        articleDetailToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ArticleDetailActivity.super.onBackPressed();
+            }
+        });
 
         getSupportLoaderManager().initLoader(0, null, this);
 
