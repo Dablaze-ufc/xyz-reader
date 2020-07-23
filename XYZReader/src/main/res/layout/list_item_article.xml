@@ -5,6 +5,7 @@
     android:layout_margin="@dimen/card_item_margin"
     android:clickable="true"
     android:focusable="true"
+    android:elevation="1dp"
     android:foreground="?selectableItemBackground">
 
     <LinearLayout
@@ -17,6 +18,7 @@
             android:id="@+id/thumbnail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
             android:background="@color/photo_placeholder"
             android:transitionName="@string/image_transition" />
 
