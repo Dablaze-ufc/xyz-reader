@@ -52,6 +52,7 @@ public class ArticleDetailActivity extends AppCompatActivity
 
         // Set up toolbar
         Toolbar articleDetailToolbar = findViewById(R.id.article_detail_toolbar);
+        setSupportActionBar(articleDetailToolbar);
         articleDetailToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

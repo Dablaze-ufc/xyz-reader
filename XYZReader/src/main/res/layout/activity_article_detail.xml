@@ -5,13 +5,14 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"
+        android:layout_marginTop="@dimen/action_bar_height"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/article_detail_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="@dimen/action_bar_height"
         app:navigationIcon="@drawable/ic_back_arrow" />
 
 </FrameLayout>
